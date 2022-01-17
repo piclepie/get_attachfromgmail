@@ -66,24 +66,6 @@ function attachmentfromGmail(attachmentname,destsheet_id,destsheetname) {
   }
 
 
-  function filter_admin_ppty(){
-   
-    const main_ssSheet = SpreadsheetApp.openById(id);
-    const all_properties = main_ssSheet.getSheetByName(sheetname)
-                             .getDataRange()
-                             .getValues();    
-    const sheeet = main_ssSheet.getSheetByName(sheetname);
-
-    const active_values = all_properties.filter(r => { return (r[2] == '' || r[2] == '')&& r[7]!=='').filter(r => {return r[10].includes('')});
-    
-      sheeet.getRange(2,1,sheeet.getLastRow(),sheeet.getLastColumn()).clear()
-      //sheeet.clear();
-      sheeet.getRange(2,1,active_values.length,active_values[0].length).setValues(active_values);
-    
-
-     
-  }
-
 
 
 
