@@ -72,7 +72,9 @@ function attachmentfromGmail_csv(attachmentname, destsheet_id, destsheetname) {
 
 
 
-
+//planning for V3 
+//using API to fetch data. no need spreadsheet as a mid point. 
+//I'm learning how to... 
 
 
 
